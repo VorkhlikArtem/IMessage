@@ -29,6 +29,7 @@ class FirestoreService {
     
     var currentUser: MUser!
     
+    /// we get user's info when logging in
     func getUserData(user: User, completion: @escaping (Result<MUser, Error>)-> Void) {
         let docRef = usersRef.document(user.uid)
         docRef.getDocument { document, error in
@@ -45,6 +46,7 @@ class FirestoreService {
         }
     }
     
+    /// saving user's profile
     func saveProfileWith(id: String, email: String, username: String?, avatarImage: UIImage?, description: String?, sex: String?, completion: @escaping (Result<MUser, Error>)->Void ) {
         guard Validators.isFilled(username: username, description: description, sex: sex) else {
             completion(.failure(UserError.notFilled))
@@ -77,6 +79,7 @@ class FirestoreService {
         }
     }
     
+    /// we create document of messages collection if user  does not have a chat with the current user, then we add the message
     func sendMessage(message: String, receiver: MUser, completion: @escaping (Result<Void, Error>)->Void ) {
         let reference = db.collection(["users", receiver.id, "waitingChats"].joined(separator: "/"))
         let messageRef = reference.document(self.currentUser.id).collection("messages")
@@ -143,7 +146,7 @@ class FirestoreService {
                 completion(.failure(error))
                 return
             }
-           // guard let querySnapshot = querySnapshot else {return}
+           
             for document in querySnapshot!.documents {
                 guard let message = MMessage(document: document) else {return}
                 messages.append(message)

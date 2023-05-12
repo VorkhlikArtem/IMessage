@@ -11,7 +11,6 @@ import FirebaseFirestore
 
 class PeopleViewController: UIViewController {
     
-//    let users = Bundle.main.decode([MUser].self, from: "users.json")
     var users = [MUser]()
     private var usersListener: ListenerRegistration?
     
@@ -50,7 +49,6 @@ class PeopleViewController: UIViewController {
         setupSearchBar()
         setupCollectionView()
         createDataSource()
-       // reloadData(with: nil)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(signOutTapped))
         
@@ -193,21 +191,3 @@ extension PeopleViewController: UICollectionViewDelegate {
 }
 
 
-//MARK: - SwiftUI
-import SwiftUI
-struct PeopleViewControllerProvider: PreviewProvider {
-    static var previews: some View {
-        ContainerView().ignoresSafeArea(.all)
-    }
-    struct ContainerView: UIViewControllerRepresentable {
-        
-        let viewController = MainTabBarController()
-        
-        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        }
-
-        func makeUIViewController(context: Context) -> some UIViewController {
-            return viewController
-        }
-    }
-}

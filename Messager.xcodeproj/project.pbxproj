@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AC077093294CBE69002EBC06 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC077092294CBE68002EBC06 /* FirestoreService.swift */; };
-		AC296622294B39DD0097ED22 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = AC296621294B39DC0097ED22 /* users.json */; };
 		AC296624294B3A0D0097ED22 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC296623294B3A0D0097ED22 /* MChat.swift */; };
 		AC296626294B3A420097ED22 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC296625294B3A420097ED22 /* MUser.swift */; };
 		AC296629294B496E0097ED22 /* UIVC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC296628294B496D0097ED22 /* UIVC + Extension.swift */; };
@@ -25,8 +24,6 @@
 		AC296641294CA8750097ED22 /* AuthNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC296640294CA8750097ED22 /* AuthNavigationDelegate.swift */; };
 		AC29E411294CEFF000584CFF /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29E410294CEFF000584CFF /* UserError.swift */; };
 		AC36AAD42939508A00D7602D /* Bundle + Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36AAD32939508900D7602D /* Bundle + Decodable.swift */; };
-		AC36AAD7293A1DF000D7602D /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = AC36AAD6293A1DF000D7602D /* activeChats.json */; };
-		AC36AAD9293A1E0600D7602D /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = AC36AAD8293A1E0600D7602D /* waitingChats.json */; };
 		AC587837293A576800271423 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC587836293A576700271423 /* ActiveChatCell.swift */; };
 		AC58783A293A68FF00271423 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC587839293A68FF00271423 /* WaitingChatCell.swift */; };
 		AC58783D293A6C4300271423 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58783C293A6C4300271423 /* SelfConfiguringCell.swift */; };
@@ -36,7 +33,6 @@
 		AC61298929379AB00064C6FE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61298829379AB00064C6FE /* AuthViewController.swift */; };
 		AC61298E29379AB70064C6FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC61298D29379AB70064C6FE /* Assets.xcassets */; };
 		AC61299129379AB70064C6FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC61298F29379AB70064C6FE /* LaunchScreen.storyboard */; };
-		AC61299B2937A7A60064C6FE /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61299A2937A7A50064C6FE /* SwiftUIView.swift */; };
 		AC90703A2937EEEC00F2CA96 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9070392937EEEC00F2CA96 /* SignUpViewController.swift */; };
 		AC90703C2937F53500F2CA96 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90703B2937F53500F2CA96 /* OneLineTextField.swift */; };
 		AC90703E29380A7400F2CA96 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90703D29380A7300F2CA96 /* LoginViewController.swift */; };
@@ -67,7 +63,6 @@
 /* Begin PBXFileReference section */
 		4516750E4E5EF7F7038EA21C /* Pods-Messager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messager.debug.xcconfig"; path = "Target Support Files/Pods-Messager/Pods-Messager.debug.xcconfig"; sourceTree = "<group>"; };
 		AC077092294CBE68002EBC06 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
-		AC296621294B39DC0097ED22 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		AC296623294B3A0D0097ED22 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		AC296625294B3A420097ED22 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
 		AC296628294B496D0097ED22 /* UIVC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVC + Extension.swift"; sourceTree = "<group>"; };
@@ -84,8 +79,6 @@
 		AC296640294CA8750097ED22 /* AuthNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationDelegate.swift; sourceTree = "<group>"; };
 		AC29E410294CEFF000584CFF /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
 		AC36AAD32939508900D7602D /* Bundle + Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle + Decodable.swift"; sourceTree = "<group>"; };
-		AC36AAD6293A1DF000D7602D /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
-		AC36AAD8293A1E0600D7602D /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		AC587836293A576700271423 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		AC587839293A68FF00271423 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		AC58783C293A6C4300271423 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
@@ -97,7 +90,6 @@
 		AC61298D29379AB70064C6FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC61299029379AB70064C6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC61299229379AB70064C6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC61299A2937A7A50064C6FE /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		AC9070392937EEEC00F2CA96 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AC90703B2937F53500F2CA96 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		AC90703D29380A7300F2CA96 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -188,16 +180,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		AC36AAD5293A1D9C00D7602D /* jsonData */ = {
-			isa = PBXGroup;
-			children = (
-				AC36AAD6293A1DF000D7602D /* activeChats.json */,
-				AC36AAD8293A1E0600D7602D /* waitingChats.json */,
-				AC296621294B39DC0097ED22 /* users.json */,
-			);
-			path = jsonData;
-			sourceTree = "<group>";
-		};
 		AC587838293A58B300271423 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,8 +233,6 @@
 				ACD6DD562937BA4000995A17 /* Extensions */,
 				AC36AAD22939504F00D7602D /* Helpers */,
 				AC58783B293A6BF900271423 /* Protocols */,
-				AC36AAD5293A1D9C00D7602D /* jsonData */,
-				AC61299A2937A7A50064C6FE /* SwiftUIView.swift */,
 				AC61298D29379AB70064C6FE /* Assets.xcassets */,
 				AC61298F29379AB70064C6FE /* LaunchScreen.storyboard */,
 				AC296636294BB5110097ED22 /* GoogleService-Info.plist */,
@@ -377,11 +357,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC296622294B39DD0097ED22 /* users.json in Resources */,
 				AC61299129379AB70064C6FE /* LaunchScreen.storyboard in Resources */,
-				AC36AAD7293A1DF000D7602D /* activeChats.json in Resources */,
 				AC61298E29379AB70064C6FE /* Assets.xcassets in Resources */,
-				AC36AAD9293A1E0600D7602D /* waitingChats.json in Resources */,
 				AC296637294BB5120097ED22 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,7 +448,6 @@
 				ACF6F1BD294F309B00555A49 /* StorageService.swift in Sources */,
 				AC61298529379AB00064C6FE /* AppDelegate.swift in Sources */,
 				ACB1D7552950C999002A7EB0 /* MMessage.swift in Sources */,
-				AC61299B2937A7A60064C6FE /* SwiftUIView.swift in Sources */,
 				AC90704629391A2400F2CA96 /* ListViewController.swift in Sources */,
 				AC58783D293A6C4300271423 /* SelfConfiguringCell.swift in Sources */,
 				AC29663A294BBE590097ED22 /* AuthService.swift in Sources */,
@@ -625,13 +601,14 @@
 				CODE_SIGN_ENTITLEMENTS = Messager/Messager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LQUTNLGWCF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Messager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,13 +631,14 @@
 				CODE_SIGN_ENTITLEMENTS = Messager/Messager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LQUTNLGWCF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Messager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

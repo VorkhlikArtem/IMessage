@@ -11,8 +11,6 @@ import FirebaseFirestore
 
 class ListViewController: UIViewController {
     
-//    let activeChats = Bundle.main.decode([MChat].self, from: "activeChats.json")
-//    let waitingChats = Bundle.main.decode([MChat].self, from: "waitingChats.json")
     var activeChats = [MChat]()
     var waitingChats = [MChat]()
     
@@ -256,21 +254,3 @@ extension ListViewController: UISearchBarDelegate {
 }
 
 
-//MARK: - SwiftUI
-import SwiftUI
-struct ListViewControllerProvider: PreviewProvider {
-    static var previews: some View {
-        ContainerView().ignoresSafeArea(.all).previewInterfaceOrientation(.portrait)
-    }
-    struct ContainerView: UIViewControllerRepresentable {
-        
-        let viewController = MainTabBarController()
-        
-        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        }
-
-        func makeUIViewController(context: Context) -> some UIViewController {
-            return viewController
-        }
-    }
-}
