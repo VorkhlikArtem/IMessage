@@ -12,6 +12,7 @@ import GoogleSignIn
 
 class AuthViewController: UIViewController {
     let logoImageView = UIImageView(image: #imageLiteral(resourceName: "artem"), contentMode: .scaleAspectFit)
+    let welcomeLabel = UILabel(text: "Welcome to my Chat App", font: .systemFont(ofSize: 15, weight: .bold))
 
     let googleLabel = UILabel(text: "Get started with")
     let emailLabel = UILabel(text: "Or sign up with")
@@ -49,26 +50,30 @@ class AuthViewController: UIViewController {
 
     
     func setupConstraints() {
-        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+        let logoStack = UIStackView(arrangedSubviews: [logoImageView, welcomeLabel], axis: .horizontal, spacing: 15)
+        logoStack.alignment = .center
         
         let googleView = ButtonFormView(label: googleLabel, button: googleButton)
         let emailView = ButtonFormView(label: emailLabel, button: emailButton)
         let loginView = ButtonFormView(label: alreadyOnboardLabel, button: loginButton)
         
         let stackView = UIStackView(arrangedSubviews: [googleView, emailView, loginView], axis: .vertical, spacing: 40)
+        
+        logoStack.translatesAutoresizingMaskIntoConstraints = false
         stackView.translatesAutoresizingMaskIntoConstraints = false
-       
-        view.addSubview(logoImageView)
+        
+        view.addSubview(logoStack)
         view.addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
-            logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logoImageView.heightAnchor.constraint(equalToConstant: 50),
+            logoStack.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
+            logoStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            logoStack.heightAnchor.constraint(equalToConstant: 50),
+            logoImageView.widthAnchor.constraint(equalToConstant: 50)
         ])
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 100),
+            stackView.topAnchor.constraint(equalTo: logoStack.bottomAnchor, constant: 100),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])
