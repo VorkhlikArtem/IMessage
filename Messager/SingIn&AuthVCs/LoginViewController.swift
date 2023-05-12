@@ -57,8 +57,7 @@ class LoginViewController: UIViewController {
                         self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
                     }
                 }
-//                self.presentAlert(withTitle: "Success", andMessage: "You were successfully sign up")
-//                print(user.displayName as Any)
+
             case .failure(let error):
                 self.presentAlert(withTitle: "Failure", andMessage: error.localizedDescription)
             }
