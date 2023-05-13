@@ -155,6 +155,7 @@ class FirestoreService {
         }
     }
     
+    /// we change waiting chat into active if the user accept the friend request
     func changeToActive(chat: MChat, completion: @escaping (Result<Void, Error>)->Void) {
         getWaitingChatMessages(chat: chat) { result in
             switch result {
